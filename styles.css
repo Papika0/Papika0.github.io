@@ -1,0 +1,29 @@
+header {
+  position: absolute;
+  width: 923px;
+  height: 84px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #7025fb;
+}
+
+/* Landing page- scrolling photo */
+.scrolling-photo {
+  position: absolute;
+  width: 923px;
+  height: 1196px;
+  left: 0px;
+  top: 84px;
+  background-image: url(./img/landingpage.png);
+}
+
+.fixed-side {
+  position: absolute;
+  width: 997px;
+  height: 1280px;
+  left: 923px;
+  top: 0px;
+  background: #fd5334;
+}
