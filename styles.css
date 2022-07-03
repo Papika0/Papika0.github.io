@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 header {
   position: absolute;
   width: 923px;
@@ -148,3 +147,269 @@ button.GetS-Button:hover {
 }
 
 /* Registration page */
+.step-2-fixed {
+  position: fixed;
+  width: 923px;
+  height: 1196px;
+  left: 0;
+  top: 84px;
+}
+#quote-2 {
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 48.5px;
+  text-transform: uppercase;
+  color: #212529;
+
+  position: absolute;
+  width: 423px;
+  height: 89px;
+  left: 132px;
+  top: 328px;
+}
+
+#author-2 {
+  position: absolute;
+  width: 222px;
+  height: 33px;
+  left: 132px;
+  top: 442px;
+
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #e5e6e8;
+}
+
+#top-2 {
+  position: absolute;
+  width: 215px;
+  height: 24px;
+  left: 971px;
+  top: 30px;
+
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #212529;
+}
+
+#hline-2 {
+  position: absolute;
+  width: 999px;
+  left: 923px;
+  top: 82.8px;
+
+  border: 0.1px solid rgba(185, 180, 196, 0.3);
+}
+
+#bline-2 {
+  position: absolute;
+  width: 174px;
+  border: 0.2px solid rgba(185, 180, 196, 0.3);
+  width: 174px;
+  left: 1074px;
+  top: 164px;
+}
+
+.stagenum-1 {
+  position: absolute;
+  width: 11px;
+  height: 25px;
+  left: 1044px;
+  top: 152px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #212529;
+
+  box-sizing: border-box;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  background: #ffffff;
+  border: 1px solid #e5e6e8;
+  border-radius: 8px;
+}
+
+.stagenum-2 {
+  position: absolute;
+  width: 11px;
+  height: 25px;
+  left: 1266px;
+  top: 152px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+
+  box-sizing: border-box;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  background: #f5f5f5;
+  border: 1px solid #e5e6e8;
+  border-radius: 8px;
+}
+
+.stages {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+
+  position: absolute;
+  top: 188px;
+  height: 24px;
+}
+
+#stages-1 {
+  right: 791px;
+}
+
+#stages-2 {
+  right: 583px;
+}
+
+.formh {
+  position: absolute;
+  width: 328px;
+  height: 48px;
+  left: 971px;
+  top: 324px;
+
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.formp {
+  position: absolute;
+  width: 225px;
+  height: 21px;
+  left: 971px;
+  top: 375px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #95939a;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 40px;
+
+  position: absolute;
+  width: 775px;
+  height: 304px;
+  left: 971px;
+  top: 481px;
+}
+.form-group input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 743px;
+  height: 46px;
+
+  background: rgba(255, 255, 255, 1e-6);
+  border: none;
+  box-shadow: 0px -1px 0px 0px #00000020 inset;
+}
+
+.next-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 128px;
+  height: 53px;
+  left: 1618px;
+  top: 873px;
+
+  background: #212529;
+  border-radius: 8px;
+}
+
+.back-btn {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 93px;
+  height: 53px;
+  left: 971px;
+  top: 873px;
+
+  border: 1px solid #212529;
+  border-radius: 8px;
+}
+.back-btn p {
+  width: 45px;
+  height: 27px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+
+  color: #212529;
+}
+
+.next-btn p {
+  width: 44px;
+  height: 27px;
+
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.next-btn img {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 80px;
+  top: 14.5px;
+}

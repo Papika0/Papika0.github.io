@@ -14,7 +14,7 @@
   </head>
   <body>
     <form>
-      <div class="step step-1 active">
+      <div class="step step-1">
         <header class="header">
           <div class="icon">
             <img src="./img/icon/icon-logo.png" alt="icon" />
@@ -33,18 +33,70 @@
           </button>
         </div>
       </div>
-      <div class="step step-2">
+      <div class="step step-2 active">
         <header class="header">
           <div class="icon">
             <img src="./img/icon/icon-logo.png" alt="icon" />
           </div>
           <img src="./img/logo.png" alt="logo" class="logo" />
         </header>
-        <div class="step-2-fixed">
-          <img src="./img/background/Registrationpage.png" alt="regPage" />
-          <p id="quote-2">"when you see a good move,look for a better one"</p>
-          <p id="author-2">-emanuel lasker</p>
+        <section>
+          <img
+            src="./img/background/Registrationpage.png"
+            alt="regPage"
+            class="step-2-fixed"
+          />
+          <p id="quote-2">“When you see a good move, look for a better one.”</p>
+          <p id="author-2">-Emanuel Lasker</p>
+        </section>
+        <p id="top-2">Start Creating Your Account</p>
+        <hr id="hline-2" />
+
+        <p class="stagenum-1">1</p>
+        <hr id="bline-2" />
+        <p class="stages" id="stages-1">Personal information</p>
+        <p class="stagenum-2">2</p>
+        <p class="stages" id="stages-2">Chess experience</p>
+        <p class="formh">Personal information</p>
+        <p class="formp">This is basic information fields</p>
+        <div class="form-group">
+          <input
+            placeholder="Name"
+            type="text"
+            id="Name"
+            name="Name"
+            required
+            minlength="2"
+          />
+          <input
+            placeholder="Email address"
+            type="email"
+            id="Email"
+            required
+            pattern=".+@redberry\.ge"
+          />
+          <input
+            placeholder="Phone number"
+            type="text"
+            id="Pnumber"
+            onkeypress="return /[0-9]/i.test(event.key)"
+            required
+            maxlength="9"
+          />
+          <input
+            placeholder="Date of birth *"
+            type="text"
+            id="Date"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            required
+          />
         </div>
+        <button type="button" class="next-btn">
+          <p>Next</p>
+          <img src="./img/icon/arrow-right-icon.png" alt="arrow-right" />
+        </button>
+        <button type="button" class="back-btn"><p>Back</p></button>
       </div>
     </form>
     <script src="app.js"></script>
