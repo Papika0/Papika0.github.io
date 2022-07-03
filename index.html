@@ -13,26 +13,40 @@
     <title>Redberry Knight Cup</title>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="icon">
-        <img src="./img/icon.png" alt="icon" />
+    <form>
+      <div class="step step-1 active">
+        <header class="header">
+          <div class="icon">
+            <img src="./img/icon/icon-logo.png" alt="icon" />
+          </div>
+          <img src="./img/logo.png" alt="logo" class="logo" />
+        </header>
+        <div class="step-1-scrlphoto"></div>
+        <div class="step-1-fixed-side">
+          <p id="p1-1">chess says</p>
+          <p id="p2-1">who we are</p>
+          <p id="pSmall-1">a lot about</p>
+
+          <button type="button" class="GetS-Button">
+            <p>Get Started</p>
+            <img src="./img/icon/arrow-right-icon.png" alt="arrow-right" />
+          </button>
+        </div>
       </div>
-      <div class="logo">
-        <img src="./img/logo.png" alt="logo" class="logo" />
+      <div class="step step-2">
+        <header class="header">
+          <div class="icon">
+            <img src="./img/icon/icon-logo.png" alt="icon" />
+          </div>
+          <img src="./img/logo.png" alt="logo" class="logo" />
+        </header>
+        <div class="step-2-fixed">
+          <img src="./img/background/Registrationpage.png" alt="regPage" />
+          <p id="quote-2">"when you see a good move,look for a better one"</p>
+          <p id="author-2">-emanuel lasker</p>
+        </div>
       </div>
-    </header>
-    <div class="scrolling-photo"></div>
-    <div class="fixed-side">
-      <div class="title-sec">
-        <h1>chess says</h1>
-        <h2>who we are</h2>
-        <p>a lot about</p>
-      </div>
-      <button type="button" class="next-btn">
-        <p>Get Started</p>
-        <img src="./img/arrow-right-circle.png" alt="arrow" />
-      </button>
-    </div>
+    </form>
+    <script src="app.js"></script>
   </body>
 </html>

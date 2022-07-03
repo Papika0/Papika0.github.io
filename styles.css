@@ -21,26 +21,32 @@ header {
 }
 .logo {
   position: absolute;
-  margin-top: auto;
-  margin-bottom: auto;
   top: 30.3px;
-  left: 40.8px;
+  left: 82.93px;
   bottom: 30.65px;
   height: 24px;
   width: 254.82px;
 }
 
-/* Landing page- scrolling photo */
-.scrolling-photo {
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+/* Landing page */
+.step-1-scrlphoto {
   position: absolute;
   width: 923px;
   height: 1196px;
   left: 0px;
   top: 84px;
-  background-image: url(./img/landingpage.png);
+  background-image: url(./img/background/landingpage.png);
 }
 
-.fixed-side {
+.step-1-fixed-side {
   position: fixed;
   width: 997px;
   height: 1280px;
@@ -49,7 +55,7 @@ header {
   background: #fd5334;
 }
 
-.title-sec h1 {
+#p1-1 {
   margin: auto;
   position: absolute;
   top: 265px;
@@ -64,7 +70,7 @@ header {
   color: white;
 }
 
-.title-sec h2 {
+#p2-1 {
   margin: auto;
   position: absolute;
   top: 390px;
@@ -78,7 +84,7 @@ header {
   line-height: 109px;
   color: white;
 }
-.title-sec p {
+#pSmall-1 {
   margin: auto;
   position: absolute;
   left: 607px;
@@ -92,7 +98,7 @@ header {
   color: #212529;
 }
 
-button.next-btn {
+button.GetS-Button {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -107,11 +113,11 @@ button.next-btn {
   animation-duration: 1ms;
 }
 
-button.next-btn:hover {
+button.GetS-Button:hover {
   outline: 4px solid #c2a5f9cc;
 }
 
-.next-btn p {
+.GetS-Button p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -131,7 +137,7 @@ button.next-btn:hover {
   color: #ffffff;
 }
 
-.next-btn img {
+.GetS-Button img {
   margin: auto;
   position: absolute;
   left: 143px;
@@ -140,3 +146,5 @@ button.next-btn:hover {
   width: 24px;
   border-radius: 0px;
 }
+
+/* Registration page */
