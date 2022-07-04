@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 header {
   position: absolute;
   width: 923px;
@@ -13,11 +14,13 @@ header {
   bottom: 0%;
   background: #7025fb;
 }
+
 .icon {
   position: absolute;
   left: 60px;
   top: 30.41px;
 }
+
 .logo {
   position: absolute;
   top: 30.3px;
@@ -83,6 +86,7 @@ header {
   line-height: 109px;
   color: white;
 }
+
 #pSmall-1 {
   margin: auto;
   position: absolute;
@@ -154,6 +158,7 @@ button.GetS-Button:hover {
   left: 0;
   top: 84px;
 }
+
 #quote-2 {
   font-family: "Nunito";
   font-style: italic;
@@ -317,31 +322,43 @@ button.GetS-Button:hover {
   color: #95939a;
 }
 
-.form-group {
+.back-btn {
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 16px;
-  gap: 40px;
+  padding: 13px 24px;
+  gap: 10px;
 
   position: absolute;
-  width: 775px;
-  height: 304px;
+  width: 93px;
+  height: 53px;
   left: 971px;
-  top: 481px;
+  top: 873px;
+
+  border: 1px solid #212529;
+  border-radius: 8px;
 }
-.form-group input {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
 
-  width: 743px;
-  height: 46px;
+.back-btn:hover {
+  border: 1px solid #c2a5f9cc;
+  border-radius: 8px;
+  background: rgba(185, 180, 196, 0.3);
+}
 
-  background: rgba(255, 255, 255, 1e-6);
-  border: none;
-  box-shadow: 0px -1px 0px 0px #00000020 inset;
+.back-btn p {
+  width: 45px;
+  height: 27px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+
+  color: #212529;
 }
 
 .next-btn {
@@ -361,38 +378,6 @@ button.GetS-Button:hover {
   border-radius: 8px;
 }
 
-.back-btn {
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 13px 24px;
-  gap: 10px;
-
-  position: absolute;
-  width: 93px;
-  height: 53px;
-  left: 971px;
-  top: 873px;
-
-  border: 1px solid #212529;
-  border-radius: 8px;
-}
-.back-btn p {
-  width: 45px;
-  height: 27px;
-
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  text-transform: capitalize;
-
-  color: #212529;
-}
-
 .next-btn p {
   width: 44px;
   height: 27px;
@@ -406,10 +391,108 @@ button.GetS-Button:hover {
   color: #ffffff;
 }
 
+.next-btn:hover {
+  outline: 4px solid #c2a5f9cc;
+}
+
 .next-btn img {
   position: absolute;
   height: 24px;
   width: 24px;
   left: 80px;
   top: 14.5px;
+}
+
+.form-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 40px;
+
+  position: absolute;
+  width: 775px;
+  height: 304px;
+  left: 971px;
+  top: 481px;
+}
+
+.input-0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 16px;
+
+  width: 775px;
+  height: 46px;
+
+  background: #ffffff;
+
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+}
+.input-0 input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  outline: none;
+
+  border: none;
+  width: 743px;
+  height: 30px;
+
+  align-self: stretch;
+
+  background: rgba(255, 255, 255, 1e-6);
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #212529;
+}
+
+.input-0 input:hover {
+  background: #f8f9fa;
+}
+
+.input-0 input:focus {
+  outline: none;
+}
+
+.input-0 input:active {
+  background: #e9ecef;
+}
+
+#Name.valid {
+  width: 698px;
+  background: rgba(255, 255, 255, 1e-6);
+}
+
+#Name.invalid {
+  color: red;
+}
+
+#Email.valid {
+  color: green;
+}
+#Email.invalid {
+  color: red;
+}
+
+#Pnumber.valid {
+  color: pink;
+}
+#Pnumber.invalid {
+  color: red;
+}
+
+#Date.valid {
+  color: pink;
+}
+#Date.invalid {
+  color: red;
 }

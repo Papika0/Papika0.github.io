@@ -59,39 +59,38 @@
         <p class="stages" id="stages-2">Chess experience</p>
         <p class="formh">Personal information</p>
         <p class="formp">This is basic information fields</p>
-        <div class="form-group">
-          <input
-            placeholder="Name"
-            type="text"
-            id="Name"
-            name="Name"
-            required
-            minlength="2"
-          />
-          <input
-            placeholder="Email address"
-            type="email"
-            id="Email"
-            required
-            pattern=".+@redberry\.ge"
-          />
-          <input
-            placeholder="Phone number"
-            type="text"
-            id="Pnumber"
-            onkeypress="return /[0-9]/i.test(event.key)"
-            required
-            maxlength="9"
-          />
-          <input
-            placeholder="Date of birth *"
-            type="text"
-            id="Date"
-            onfocus="(this.type='date')"
-            onblur="(this.type='text')"
-            required
-          />
+
+        <div class="form-side">
+          <div class="input-0">
+            <input type="text" id="Name" placeholder="Name" required />
+          </div>
+          <div class="input-0">
+            <input type="Email" id="Email" placeholder="Email" required />
+            <i class="fas fa-valid"></i>
+          </div>
+          <div class="input-0">
+            <input
+              type="text"
+              placeholder="Phone number"
+              id="Pnumber"
+              onkeypress="return /[0-9]/i.test(event.key)"
+              required
+            />
+            <i class="fas fa-valid"></i>
+          </div>
+          <div class="input-0">
+            <input
+              type="text"
+              id="Date"
+              placeholder="Date"
+              onclick="(this.type='date')"
+              onblur="(this.type='text')"
+              required
+            />
+            <i class="fas fa-valid"></i>
+          </div>
         </div>
+
         <button type="button" class="next-btn">
           <p>Next</p>
           <img src="./img/icon/arrow-right-icon.png" alt="arrow-right" />
