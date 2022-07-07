@@ -467,32 +467,10 @@ button.GetS-Button:hover {
   background: #e9ecef;
 }
 
-#Name.valid {
-  width: 698px;
-  background: rgba(255, 255, 255, 1e-6);
+.form-control.success input {
+  border-color: #2ecc71;
 }
 
-#Name.invalid {
-  color: red;
-}
-
-#Email.valid {
-  color: green;
-}
-#Email.invalid {
-  color: red;
-}
-
-#Pnumber.valid {
-  color: pink;
-}
-#Pnumber.invalid {
-  color: red;
-}
-
-#Date.valid {
-  color: pink;
-}
-#Date.invalid {
-  color: red;
+.form-control.error input {
+  border-color: #e74c3c;
 }

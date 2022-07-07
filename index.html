@@ -62,10 +62,11 @@
 
         <div class="form-side">
           <div class="input-0">
-            <input type="text" id="Name" placeholder="Name" required />
+            <input type="text" id="Name" placeholder="Name" />
+            <i class="fas fa-valid"></i>
           </div>
           <div class="input-0">
-            <input type="Email" id="Email" placeholder="Email" required />
+            <input type="Email" id="Email" placeholder="Email" />
             <i class="fas fa-valid"></i>
           </div>
           <div class="input-0">
@@ -74,7 +75,6 @@
               placeholder="Phone number"
               id="Pnumber"
               onkeypress="return /[0-9]/i.test(event.key)"
-              required
             />
             <i class="fas fa-valid"></i>
           </div>
@@ -85,17 +85,35 @@
               placeholder="Date"
               onclick="(this.type='date')"
               onblur="(this.type='text')"
-              required
             />
             <i class="fas fa-valid"></i>
           </div>
         </div>
 
-        <button type="button" class="next-btn">
+        <button type="submit" class="next-btn">
           <p>Next</p>
           <img src="./img/icon/arrow-right-icon.png" alt="arrow-right" />
         </button>
-        <button type="button" class="back-btn"><p>Back</p></button>
+        <button type="button" class="back-btn">
+          <p>Back</p>
+        </button>
+      </div>
+      <div class="step step-3">
+        <header class="header">
+          <div class="icon">
+            <img src="./img/icon/icon-logo.png" alt="icon" />
+          </div>
+          <img src="./img/logo.png" alt="logo" class="logo" />
+        </header>
+        <section>
+          <img
+            src="./img/background/Registrationpage.png"
+            alt="regPage"
+            class="step-2-fixed"
+          />
+          <p id="quote-2">“When you see a good move, look for a better one.”</p>
+          <p id="author-2">-Emanuel Lasker</p>
+        </section>
       </div>
     </form>
     <script src="app.js"></script>
