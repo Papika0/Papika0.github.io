@@ -155,8 +155,6 @@ button.GetS-Button:hover {
   position: fixed;
   width: 923px;
   height: 1196px;
-  left: 0;
-  top: 84px;
 }
 
 #quote-2 {
@@ -193,7 +191,6 @@ button.GetS-Button:hover {
 
 #top-2 {
   position: absolute;
-  width: 215px;
   height: 24px;
   left: 971px;
   top: 30px;
@@ -466,11 +463,245 @@ button.GetS-Button:hover {
 .input-0 input:active {
   background: #e9ecef;
 }
-
-.form-control.success input {
-  border-color: #2ecc71;
+.input-0 i {
+  visibility: hidden;
+  position: absolute;
+  right: 20px;
 }
 
-.form-control.error input {
-  border-color: #e74c3c;
+.input-0.success i.check-valid {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.input-0.success input {
+  border-color: #2ecc71;
+  width: 698px;
+}
+.input-0.error {
+  background: #ffefef;
+}
+.input-0.error input {
+  color: red;
+}
+
+/* Chess experienece page */
+/* Knowledge selection */
+.selection-1 {
+  position: absolute;
+  width: 392px;
+  height: 46px;
+  left: 961px;
+  top: 491px;
+  background: #ffffff;
+}
+
+.selection-1 select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  width: 312px;
+  height: 30px;
+  left: 16px;
+  top: 8px;
+}
+
+/* Chess selection */
+
+.selection-2 {
+  position: absolute;
+  width: 392px;
+  height: 46px;
+  left: 1376px;
+  top: 491px;
+
+  background: #ffffff;
+}
+
+.selection-2 select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: absolute;
+  width: 312px;
+  height: 30px;
+  left: 16px;
+  top: 8px;
+}
+
+#selectField {
+  width: 392px;
+  height: 46px;
+  left: 1376px;
+  top: 491px;
+
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#selectField img {
+  width: 12px;
+  height: 13px;
+  transition: transform 0.5s;
+}
+#selectText::after {
+  content: " *";
+  color: red;
+}
+
+#list {
+  box-sizing: border-box;
+  width: 391px;
+  height: 419px;
+  left: 1377px;
+  top: 542px;
+
+  background: #ffffff;
+  border: 1px solid rgba(185, 180, 196, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 10 !important;
+}
+
+.options {
+  display: flex;
+
+  align-items: center;
+
+  padding: 15px;
+
+  width: 344px;
+
+  margin: auto;
+  justify-content: space-between;
+}
+.options img {
+  width: 100px;
+  height: 72px;
+  border-radius: 4px;
+}
+.options:hover {
+  background: #f7f7f9;
+}
+.hide {
+  visibility: hidden;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.radioh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 16px;
+
+  position: absolute;
+  width: 775px;
+  height: 46px;
+  left: 960px;
+  top: 617px;
+
+  height: 30px;
+  display: inline;
+
+  font-family: "Open Sans";
+
+  font-size: 20px;
+  line-height: 150%;
+
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.radioh::after {
+  content: " *";
+  color: red;
+}
+
+.radiob1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 58px;
+  height: 24px;
+  left: 976px;
+  top: 675px;
+}
+
+.radiob2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 54px;
+  height: 24px;
+  left: 1050px;
+  top: 675px;
+
+  background: rgba(255, 255, 255, 1e-6);
+}
+
+.radiob1 input,
+.radiob2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }

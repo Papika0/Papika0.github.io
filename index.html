@@ -33,7 +33,7 @@
           </button>
         </div>
       </div>
-      <div class="step step-2 active">
+      <div class="step step-2">
         <header class="header">
           <div class="icon">
             <img src="./img/icon/icon-logo.png" alt="icon" />
@@ -51,7 +51,6 @@
         </section>
         <p id="top-2">Start Creating Your Account</p>
         <hr id="hline-2" />
-
         <p class="stagenum-1">1</p>
         <hr id="bline-2" />
         <p class="stages" id="stages-1">Personal information</p>
@@ -63,11 +62,15 @@
         <div class="form-side">
           <div class="input-0">
             <input type="text" id="Name" placeholder="Name" />
-            <i class="fas fa-valid"></i>
+            <i class="check-valid"
+              ><img src="./img/icon/check-circle-fill.png" alt=""
+            /></i>
           </div>
           <div class="input-0">
             <input type="Email" id="Email" placeholder="Email" />
-            <i class="fas fa-valid"></i>
+            <i class="check-valid"
+              ><img src="./img/icon/check-circle-fill.png" alt=""
+            /></i>
           </div>
           <div class="input-0">
             <input
@@ -76,7 +79,9 @@
               id="Pnumber"
               onkeypress="return /[0-9]/i.test(event.key)"
             />
-            <i class="fas fa-valid"></i>
+            <i class="check-valid"
+              ><img src="./img/icon/check-circle-fill.png" alt=""
+            /></i>
           </div>
           <div class="input-0">
             <input
@@ -86,7 +91,9 @@
               onclick="(this.type='date')"
               onblur="(this.type='text')"
             />
-            <i class="fas fa-valid"></i>
+            <i class="check-valid"
+              ><img src="./img/icon/check-circle-fill.png" alt=""
+            /></i>
           </div>
         </div>
 
@@ -98,7 +105,93 @@
           <p>Back</p>
         </button>
       </div>
-      <div class="step step-3">
+      <div class="step step-3 active">
+        <header class="header">
+          <div class="icon">
+            <img src="./img/icon/icon-logo.png" alt="icon" />
+          </div>
+          <img src="./img/logo.png" alt="logo" class="logo" />
+        </header>
+        <section>
+          <img
+            src="./img/background/Chess-exp-back.svg"
+            alt="regPage"
+            class="step-2-fixed"
+          />
+          <p id="quote-3">
+            “Many have become chess masters; no one has become the master of
+            chess.”
+          </p>
+          <p id="author-3">- Siegbert Tarrasch</p>
+        </section>
+
+        <p id="top-2">First step is done, continue to finish onboarding</p>
+        <hr id="hline-2" />
+        <p class="stagenum-1">1</p>
+        <hr id="bline-2" />
+        <p class="stages" id="stages-1">Personal information</p>
+        <p class="stagenum-2">2</p>
+        <p class="stages" id="stages-2">Chess experience</p>
+        <p class="formh">Chess experience</p>
+        <p class="formp">This is basic information fields</p>
+        <div class="selection-1">
+          <select id="Knowledge" required>
+            <option disabled selected hidden>level of knowledge</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Professional">Professional</option>
+          </select>
+        </div>
+
+        <div class="selection-2">
+          <div class="selector">
+            <div id="selectField">
+              <p id="selectText">Choose your character</p>
+              <img src="./img/icon/selector-arrow.svg" id="selector-arrow" />
+            </div>
+            <ul id="list" class="hide">
+              <li class="options">
+                <p>Magnus Carlsen</p>
+                <img src="./img/selection-img/magnus-carlsen.svg" />
+              </li>
+              <li class="options">
+                <p>Wilhelm Steinitz</p>
+                <img src="./img/selection-img/Wilhelm-Steinitz.svg" />
+              </li>
+              <li class="options">
+                <p>Bobby Fischer</p>
+                <img src="./img/selection-img/Bobby-Fischer.svg" />
+              </li>
+              <li class="options">
+                <p>Bobby Fischer</p>
+                <img src="./img/selection-img/Bobby-Fischer-2.svg" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="radioh">
+          Have you participated in the Redberry Championship?
+        </p>
+        <label class="radiob1"
+          >Yes
+          <input type="radio" name="radio" checked="checked" />
+          <span class="checkmark"></span
+        ></label>
+        <label class="radiob2"
+          >No
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span
+        ></label>
+
+        <button type="button" class="next-btn">
+          <p>Done</p>
+        </button>
+        <button type="button" class="back-btn">
+          <p>Back</p>
+        </button>
+      </div>
+      <div class="step step-4 ">
         <header class="header">
           <div class="icon">
             <img src="./img/icon/icon-logo.png" alt="icon" />
@@ -111,11 +204,9 @@
             alt="regPage"
             class="step-2-fixed"
           />
-          <p id="quote-2">“When you see a good move, look for a better one.”</p>
-          <p id="author-2">-Emanuel Lasker</p>
-        </section>
       </div>
     </form>
     <script src="app.js"></script>
+    <script src="selection.js"></script>
   </body>
 </html>
