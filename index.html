@@ -43,11 +43,10 @@
         <section>
           <img
             src="./img/background/Registrationpage.png"
-            alt="regPage"
             class="step-2-fixed"
           />
           <p id="quote-2">“When you see a good move, look for a better one.”</p>
-          <p id="author-2">-Emanuel Lasker</p>
+          <p id="author-2">- Emanuel Lasker</p>
         </section>
         <p id="top-2">Start Creating Your Account</p>
         <hr id="hline-2" />
@@ -146,44 +145,47 @@
         <div class="selection-2">
           <div class="selector">
             <div id="selectField">
-              <p id="selectText">Choose your character</p>
+              <p id="selectText">Choose your character <span id="importance"> *</span></p>
               <img src="./img/icon/selector-arrow.svg" id="selector-arrow" />
             </div>
             <ul id="list" class="hide">
+               <li class="count">
+                <p>(Total 4)</p>
+                </li>
+              <li class="options">
+                <p>Nona Gaphrindashvili</p>
+                <img src="https://chess-tournament-api.devtest.ge/images/nona.jpg" />
+              </li>
+              <li class="options">
+                <p>Mikhail Tal</p>
+                <img src="https://chess-tournament-api.devtest.ge/images/mikhail.jpg" />
+              </li>
+              <li class="options">
+                <p>Bobby Fisher</p>
+                <img src="https://chess-tournament-api.devtest.ge/images/bobby.webp" />
+              </li>
               <li class="options">
                 <p>Magnus Carlsen</p>
-                <img src="./img/selection-img/magnus-carlsen.svg" />
-              </li>
-              <li class="options">
-                <p>Wilhelm Steinitz</p>
-                <img src="./img/selection-img/Wilhelm-Steinitz.svg" />
-              </li>
-              <li class="options">
-                <p>Bobby Fischer</p>
-                <img src="./img/selection-img/Bobby-Fischer.svg" />
-              </li>
-              <li class="options">
-                <p>Bobby Fischer</p>
-                <img src="./img/selection-img/Bobby-Fischer-2.svg" />
+                <img src="https://chess-tournament-api.devtest.ge/images/magnus.jpg" />
               </li>
             </ul>
           </div>
         </div>
-
+           
         <p class="radioh">
           Have you participated in the Redberry Championship?
         </p>
+       
         <label class="radiob1"
-          >Yes
+          ><span class="checkmark"></span
+        >Yes
           <input type="radio" name="radio" checked="checked" />
-          <span class="checkmark"></span
-        ></label>
+          </label>
         <label class="radiob2"
-          >No
+          ><span class="checkmark"></span> No
           <input type="radio" name="radio" />
-          <span class="checkmark"></span
-        ></label>
-
+        </label>
+           
         <button type="button" class="next-btn">
           <p>Done</p>
         </button>

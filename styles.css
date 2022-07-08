@@ -5,13 +5,8 @@
 }
 
 header {
-  position: absolute;
   width: 923px;
   height: 84px;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
   background: #7025fb;
 }
 
@@ -25,8 +20,6 @@ header {
   position: absolute;
   top: 30.3px;
   left: 82.93px;
-  bottom: 30.65px;
-  height: 24px;
   width: 254.82px;
 }
 
@@ -40,7 +33,6 @@ header {
 
 /* Landing page */
 .step-1-scrlphoto {
-  position: absolute;
   width: 923px;
   height: 1196px;
   left: 0px;
@@ -58,53 +50,39 @@ header {
 }
 
 #p1-1 {
-  margin: auto;
   position: absolute;
-  top: 265px;
   left: 85px;
   bottom: 906px;
   text-transform: uppercase;
   font-family: "Nunito";
-  font-style: normal;
   font-weight: 800;
   font-size: 80px;
-  line-height: 109px;
   color: white;
 }
 
 #p2-1 {
-  margin: auto;
   position: absolute;
-  top: 390px;
   left: 85px;
   bottom: 781px;
   text-transform: uppercase;
   font-family: "Nunito";
-  font-style: normal;
   font-weight: 900;
   font-size: 80px;
-  line-height: 109px;
   color: white;
 }
 
 #pSmall-1 {
-  margin: auto;
   position: absolute;
   left: 607px;
   top: 306px;
   font-family: "Nunito";
   font-size: 20px;
-  font-style: normal;
-  line-height: 27px;
+
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
 }
 
 button.GetS-Button {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   position: absolute;
   width: 191px;
   height: 53px;
@@ -122,39 +100,26 @@ button.GetS-Button:hover {
 
 .GetS-Button p {
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
-  line-height: 27.24px;
-  text-transform: capitalize;
 
-  margin: auto;
   position: absolute;
-
   bottom: 12px;
-  right: 60px;
   left: 24px;
-  width: 107px;
-  height: 27px;
 
   color: #ffffff;
 }
 
 .GetS-Button img {
-  margin: auto;
   position: absolute;
   left: 143px;
   top: 10.6px;
-  height: 25px;
-  width: 24px;
-  border-radius: 0px;
 }
 
 /* Registration page */
 .step-2-fixed {
   position: fixed;
   width: 923px;
-  height: 1196px;
+  top: 84px;
 }
 
 #quote-2 {
@@ -168,15 +133,12 @@ button.GetS-Button:hover {
 
   position: absolute;
   width: 423px;
-  height: 89px;
   left: 132px;
   top: 328px;
 }
 
 #author-2 {
   position: absolute;
-  width: 222px;
-  height: 33px;
   left: 132px;
   top: 442px;
 
@@ -184,30 +146,26 @@ button.GetS-Button:hover {
   font-style: italic;
   font-weight: 500;
   font-size: 24px;
-  line-height: 33px;
   text-transform: uppercase;
   color: #e5e6e8;
 }
 
 #top-2 {
   position: absolute;
-  height: 24px;
   left: 971px;
   top: 30px;
 
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 16px;
   line-height: 150%;
   text-transform: capitalize;
-  color: #212529;
 }
 
 #hline-2 {
   position: absolute;
   width: 999px;
   left: 923px;
-  top: 82.8px;
+  top: 84px;
 
   border: 0.1px solid rgba(185, 180, 196, 0.3);
 }
@@ -216,7 +174,6 @@ button.GetS-Button:hover {
   position: absolute;
   width: 174px;
   border: 0.2px solid rgba(185, 180, 196, 0.3);
-  width: 174px;
   left: 1074px;
   top: 164px;
 }
@@ -234,6 +191,7 @@ button.GetS-Button:hover {
   font-size: 18px;
   line-height: 25px;
   color: #212529;
+  text-align: center;
 
   box-sizing: border-box;
   display: inline-block;
@@ -270,11 +228,8 @@ button.GetS-Button:hover {
 
 .stages {
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #000000;
 
   position: absolute;
   top: 188px;
@@ -291,8 +246,6 @@ button.GetS-Button:hover {
 
 .formh {
   position: absolute;
-  width: 328px;
-  height: 48px;
   left: 971px;
   top: 324px;
 
@@ -300,18 +253,14 @@ button.GetS-Button:hover {
   font-weight: 600;
   font-size: 32px;
   line-height: 150%;
-  color: #000000;
 }
 
 .formp {
   position: absolute;
-  width: 225px;
-  height: 21px;
   left: 971px;
   top: 375px;
 
   font-family: "Open Sans";
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
@@ -320,17 +269,10 @@ button.GetS-Button:hover {
 }
 
 .back-btn {
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 13px 24px;
-  gap: 10px;
 
   position: absolute;
   width: 93px;
-  height: 53px;
   left: 971px;
   top: 873px;
 
@@ -345,25 +287,14 @@ button.GetS-Button:hover {
 }
 
 .back-btn p {
-  width: 45px;
-  height: 27px;
-
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
-  line-height: 27px;
-  text-transform: capitalize;
 
   color: #212529;
 }
 
 .next-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 13px 24px;
-  gap: 10px;
 
   position: absolute;
   width: 128px;
@@ -373,17 +304,14 @@ button.GetS-Button:hover {
 
   background: #212529;
   border-radius: 8px;
+  z-index: 10;
 }
 
 .next-btn p {
   width: 44px;
-  height: 27px;
 
   font-family: "Open Sans";
-  font-weight: 400;
   font-size: 20px;
-  line-height: 27px;
-  text-transform: capitalize;
 
   color: #ffffff;
 }
@@ -430,26 +358,12 @@ button.GetS-Button:hover {
   border-radius: 4px;
 }
 .input-0 input {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  outline: none;
-
   border: none;
   width: 743px;
-  height: 30px;
-
-  align-self: stretch;
-
-  background: rgba(255, 255, 255, 1e-6);
 
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 150%;
-  color: #212529;
 }
 
 .input-0 input:hover {
@@ -548,7 +462,7 @@ button.GetS-Button:hover {
   height: 13px;
   transition: transform 0.5s;
 }
-#selectText::after {
+#importance {
   content: " *";
   color: red;
 }
@@ -565,15 +479,24 @@ button.GetS-Button:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
-  z-index: 10 !important;
+  z-index: 5;
 }
+.count p {
+  padding-top: 10px;
+  padding-left: 15px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
 
+  color: #817d7d;
+}
 .options {
   display: flex;
 
   align-items: center;
 
-  padding: 15px;
+  padding: 10px;
 
   width: 344px;
 
@@ -595,6 +518,8 @@ button.GetS-Button:hover {
 .rotate {
   transform: rotate(180deg);
 }
+
+/* radio button */
 
 .radioh {
   display: flex;
@@ -629,7 +554,7 @@ button.GetS-Button:hover {
 .radiob1 {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   gap: 8px;
 
@@ -643,7 +568,7 @@ button.GetS-Button:hover {
 .radiob2 {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   gap: 8px;
 
@@ -658,6 +583,7 @@ button.GetS-Button:hover {
 
 .radiob1 input,
 .radiob2 input {
+  text-align: center;
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -665,9 +591,6 @@ button.GetS-Button:hover {
 
 /* Create a custom radio button */
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 25px;
   width: 25px;
   background-color: #eee;
@@ -675,12 +598,14 @@ button.GetS-Button:hover {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.radiob1:hover input ~ .checkmark,
+.radiob2:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.radiob1 input:checked ~ .checkmark,
+.radiob2 input:checked ~ .checkmark {
   background-color: #2196f3;
 }
 
@@ -692,12 +617,18 @@ button.GetS-Button:hover {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+.radiob1
+  input:checked
+  ~ .checkmark:after
+  .radiob2
+  input:checked
+  ~ .checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.container .checkmark:after {
+.radiob1 .checkmark:after,
+.radiob2 .checkmark:after {
   top: 9px;
   left: 9px;
   width: 8px;
