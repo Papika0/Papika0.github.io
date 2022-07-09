@@ -180,52 +180,63 @@ button.GetS-Button:hover {
 
 .stagenum-1 {
   position: absolute;
-  width: 11px;
-  height: 25px;
-  left: 1044px;
-  top: 152px;
+  display: flex;
 
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  color: #212529;
-  text-align: center;
+  left: 1030px;
+  top: 144px;
+  align-items: center;
 
-  box-sizing: border-box;
-  display: inline-block;
   width: 40px;
   height: 40px;
 
-  background: #ffffff;
   border: 1px solid #e5e6e8;
   border-radius: 8px;
 }
+.stagenum-1 #num1 {
+  position: fixed;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 12px;
+  margin-bottom: 5px;
+}
+.stagenum-1 #num1done {
+  visibility: hidden;
+}
 
+.stagenum-1.done {
+  background: #e9faf1;
+}
+.stagenum-1.done #num1done {
+  visibility: visible;
+  width: 22.84px;
+  height: 12.21px;
+  margin-left: 7px;
+}
+.stagenum-1.done #num1 {
+  visibility: hidden;
+}
 .stagenum-2 {
   position: absolute;
-  width: 11px;
-  height: 25px;
-  left: 1266px;
-  top: 152px;
+
+  right: 628px;
+  top: 144px;
 
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 25px;
-
-  box-sizing: border-box;
-  display: inline-block;
+  text-align: center;
   width: 40px;
   height: 40px;
-
   background: #f5f5f5;
   border: 1px solid #e5e6e8;
   border-radius: 8px;
 }
-
+.stagenum-2 p {
+  margin-top: 5px;
+}
 .stages {
   font-family: "Open Sans";
   font-size: 16px;
@@ -304,7 +315,6 @@ button.GetS-Button:hover {
 
   background: #212529;
   border-radius: 8px;
-  z-index: 10;
 }
 
 .next-btn p {
@@ -399,7 +409,109 @@ button.GetS-Button:hover {
   color: red;
 }
 
+.popup-name,
+.popup-email,
+.popup-pnum,
+.popup-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 350px;
+  height: 87px;
+  left: 1531px;
+  top: 226px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  visibility: hidden;
+}
+.popup-name.valid,
+.popup-email.valid,
+.popup-pnum.valid,
+.popup-date.valid {
+  visibility: visible;
+}
+.popup-header {
+  padding: 8px 6px 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  height: 39px;
+  gap: 8px;
+  border-bottom: 0.1px solid rgba(185, 180, 196, 0.3);
+}
+.popup-title {
+  width: 272px;
+  height: 21px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  color: #dc3545;
+}
+
+.popup-title img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.popup-body {
+  width: 326px;
+  height: 24px;
+  padding: 12px;
+
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #212529;
+}
+.popup-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  width: 15px;
+  height: 15px;
+  color: #95939a;
+}
 /* Chess experienece page */
+
+#quote-3 {
+  position: absolute;
+  width: 615px;
+  height: 83px;
+  left: 117px;
+  top: 261px;
+
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 35px;
+  text-transform: uppercase;
+
+  color: #212529;
+}
+
+#author-3 {
+  position: absolute;
+
+  left: 466px;
+  top: 376px;
+
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+
+  color: #093f68;
+}
 /* Knowledge selection */
 .selection-1 {
   position: absolute;
@@ -431,6 +543,7 @@ button.GetS-Button:hover {
   top: 491px;
 
   background: #ffffff;
+  z-index: 10;
 }
 
 .selection-2 select {
@@ -479,7 +592,6 @@ button.GetS-Button:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
-  z-index: 5;
 }
 .count p {
   padding-top: 10px;

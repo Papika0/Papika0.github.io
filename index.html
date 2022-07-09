@@ -33,7 +33,7 @@
           </button>
         </div>
       </div>
-      <div class="step step-2">
+      <div class="step step-2 active">
         <header class="header">
           <div class="icon">
             <img src="./img/icon/icon-logo.png" alt="icon" />
@@ -50,13 +50,52 @@
         </section>
         <p id="top-2">Start Creating Your Account</p>
         <hr id="hline-2" />
-        <p class="stagenum-1">1</p>
+        <div class="stagenum-1" id="stagenum-1">
+          <div id="num1done"><img src="./img/icon/stage-done.svg"></div>
+          <div id="num1">1</div>
+        </div>
         <hr id="bline-2" />
         <p class="stages" id="stages-1">Personal information</p>
-        <p class="stagenum-2">2</p>
+        <div class="stagenum-2"><p>2</p></div>
         <p class="stages" id="stages-2">Chess experience</p>
         <p class="formh">Personal information</p>
         <p class="formp">This is basic information fields</p>
+        <!-- popup Errors -->
+
+        <div class="popup-name" id="popup-name">
+          <div class="popup-header">
+              <div class="popup-title"><img src="./img/icon/error.svg"> Invalid name</div>
+              <button class="close-button"><img src="./img/icon/Close-button.svg" alt=""></button>
+           </div>
+           <div class="popup-body"> Please enter valid name
+             </div>
+       </div>
+       <div class="popup-email" id="popup-email">
+          <div class="popup-header">
+              <div class="popup-title"><img src="./img/icon/error.svg"> Invalid email adress</div>
+              <button class="close-button"><img src="./img/icon/Close-button.svg" alt=""></button>
+           </div>
+           <div class="popup-body"> Please enter valid email address
+             </div>
+       </div>
+            <div class="popup-pnum" id="popup-pnum">
+          <div class="popup-header">
+              <div class="popup-title"><img src="./img/icon/error.svg"> Invalid phone number</div>
+              <button class="close-button"><img src="./img/icon/Close-button.svg" alt=""></button>
+           </div>
+           <div class="popup-body"> Please enter valid phone number
+             </div>
+       </div>
+          <div class="popup-date" id="popup-date">
+          <div class="popup-header">
+              <div class="popup-title"><img src="./img/icon/error.svg"> Invalid date</div>
+              <button type="button" class="close-button"><img src="./img/icon/Close-button.svg" alt=""></button>
+           </div>
+           <div class="popup-body"> Please enter valid date
+             </div>
+       </div>
+
+
 
         <div class="form-side">
           <div class="input-0">
@@ -104,7 +143,7 @@
           <p>Back</p>
         </button>
       </div>
-      <div class="step step-3 active">
+      <div class="step step-3 ">
         <header class="header">
           <div class="icon">
             <img src="./img/icon/icon-logo.png" alt="icon" />
@@ -118,7 +157,7 @@
             class="step-2-fixed"
           />
           <p id="quote-3">
-            “Many have become chess masters; no one has become the master of
+            “Many have become chess masters;<br>no one has become the master of
             chess.”
           </p>
           <p id="author-3">- Siegbert Tarrasch</p>
@@ -126,10 +165,12 @@
 
         <p id="top-2">First step is done, continue to finish onboarding</p>
         <hr id="hline-2" />
-        <p class="stagenum-1">1</p>
+        <div class="stagenum-1 done" id="stagenum-1">
+          <div id="num1done"><img src="./img/icon/stage-done.svg"></div>
+        </div>
         <hr id="bline-2" />
         <p class="stages" id="stages-1">Personal information</p>
-        <p class="stagenum-2">2</p>
+        <div class="stagenum-2"><p>2</p></div>
         <p class="stages" id="stages-2">Chess experience</p>
         <p class="formh">Chess experience</p>
         <p class="formp">This is basic information fields</p>
