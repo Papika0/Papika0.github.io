@@ -492,7 +492,7 @@ button.GetS-Button:hover {
   font-style: italic;
   font-weight: 800;
   font-size: 26px;
-  line-height: 35px;
+  line-height: 48.5px;
   text-transform: uppercase;
 
   color: #212529;
@@ -519,20 +519,72 @@ button.GetS-Button:hover {
   height: 46px;
   left: 961px;
   top: 491px;
+  z-index: 10;
+}
+#selectField1 {
+  width: 392px;
+  height: 46px;
+  left: 1376px;
+  top: 491px;
+
   background: #ffffff;
-}
-
-.selection-1 select {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  width: 312px;
-  height: 30px;
-  left: 16px;
-  top: 8px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
 }
 
+#selectField1 img {
+  width: 12px;
+  height: 13px;
+  transition: transform 0.5s;
+}
+#list1 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 392px;
+  height: 199px;
+
+  background: #ffffff;
+  border: 1px solid rgba(185, 180, 196, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.options1 {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+}
+.options1 p {
+  height: 30px;
+
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+.options1:hover {
+  font-weight: 600;
+}
+.options1:hover {
+  background: #f7f7f9;
+}
+
+#selectText1,
+#selectText {
+  height: 30px;
+
+  font-family: "Open Sans";
+
+  font-size: 20px;
+  line-height: 150%;
+
+  color: #212529;
+}
 /* Chess selection */
 
 .selection-2 {
@@ -546,18 +598,6 @@ button.GetS-Button:hover {
   z-index: 10;
 }
 
-.selection-2 select {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  position: absolute;
-  width: 312px;
-  height: 30px;
-  left: 16px;
-  top: 8px;
-}
-
 #selectField {
   width: 392px;
   height: 46px;
@@ -569,6 +609,8 @@ button.GetS-Button:hover {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
 }
 #selectField img {
   width: 12px;
@@ -664,87 +706,135 @@ button.GetS-Button:hover {
 }
 
 .radiob1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-
-  position: absolute;
-  width: 58px;
-  height: 24px;
+  --size: 15px;
+  min-width: var(--size);
+  height: var(--size);
   left: 976px;
   top: 675px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+}
+.radiob1 input,
+.radiob2 input {
+  display: none;
+}
+.radiob1 .label,
+.radiob2 .label {
+  margin-left: 18px;
+}
+
+.radiob1[aria-label]::after,
+.radiob2[aria-label]::after {
+  content: attr(aria-label);
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.radiob1 .checkmark,
+.radiob2 .checkmark {
+  --gap: 2px;
+  --border: 2px;
+  --check-color: white;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  background: white;
+
+  border: var(--border) black;
+  padding: var(--gap);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.radiob1 input:checked ~ .checkmark,
+.radiob2 input:checked ~ .checkmark {
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+    circle at center,
+    var(--check-color)
+      calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2),
+    rgba(255, 255, 255, 0) 0
+  );
 }
 
 .radiob2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-
-  position: absolute;
-  width: 54px;
-  height: 24px;
+  --size: 15px;
+  min-width: var(--size);
+  height: var(--size);
   left: 1050px;
   top: 675px;
-
-  background: rgba(255, 255, 255, 1e-6);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
 }
 
 .radiob1 input,
 .radiob2 input {
-  text-align: center;
-  position: absolute;
-  opacity: 0;
   cursor: pointer;
 }
 
-/* Create a custom radio button */
-.checkmark {
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.radiob1:hover input ~ .checkmark,
-.radiob2:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
 .radiob1 input:checked ~ .checkmark,
 .radiob2 input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: #0d6efd;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
+/* Completed page */
+
+.completed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
   position: absolute;
-  display: none;
+  width: 402px;
+  height: 260.65px;
+  left: 1201px;
+  top: 416px;
+}
+.completed p {
+  width: 402px;
+  height: 54px;
+
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 150%;
+
+  color: #000000;
 }
 
-/* Show the indicator (dot/circle) when checked */
-.radiob1
-  input:checked
-  ~ .checkmark:after
-  .radiob2
-  input:checked
-  ~ .checkmark:after {
-  display: block;
+.rocket {
+  width: 183.89px;
+  height: 190.65px;
 }
 
-/* Style the indicator (dot/circle) */
-.radiob1 .checkmark:after,
-.radiob2 .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
+element {
+  --rocket-yellow: #ffbc0e;
+  --rocket-orange: #f56132;
+  --mobile-blue: #68e1fd;
+  --mobile-dark-blue: #093f68;
+  --mobile-lines: #dfeaef;
+  --white-color: white;
+}
+
+.cloud1 {
+  position: absolute;
+  color: var(--mobile-dark-blue);
+  background: var(--mobile-dark-blue);
+  top: 123.01px;
+  right: 76.32;
+  width: 8.16px;
+  height: 14.37px;
 }
