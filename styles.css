@@ -816,25 +816,165 @@ button.GetS-Button:hover {
 }
 
 .rocket {
-  width: 183.89px;
-  height: 190.65px;
-}
-
-element {
+  width: 402px;
+  height: 200px;
   --rocket-yellow: #ffbc0e;
   --rocket-orange: #f56132;
   --mobile-blue: #68e1fd;
   --mobile-dark-blue: #093f68;
   --mobile-lines: #dfeaef;
   --white-color: white;
+  --mobile-rotate: rotate(148.06deg);
+  --mobile-top: 15px;
+  --mobile-right: 162px;
+  --border-radius: 8px;
 }
 
-.cloud1 {
+.mobile3 {
   position: absolute;
-  color: var(--mobile-dark-blue);
+  right: var(--mobile-right);
+  top: var(--mobile-top);
+  width: 89.35px;
+  height: 157.09px;
+  background: var(--mobile-blue);
+  transform: var(--mobile-rotate);
+  border-radius: 8px;
+  border: 2px solid;
+  border-color: var(--mobile-dark-blue);
+}
+
+.mobile6 {
+  position: absolute;
+  right: var(--mobile-right);
+  top: 18px;
+  width: 97.72px;
+  height: 156.83px;
   background: var(--mobile-dark-blue);
-  top: 123.01px;
-  right: 76.32;
-  width: 8.16px;
-  height: 14.37px;
+  transform: var(--mobile-rotate);
+  border-radius: 8px;
+}
+
+.mobile4 {
+  position: absolute;
+  right: 168px;
+  top: 32px;
+  width: 78.69px;
+  height: 119.51px;
+  background: var(--white-color);
+  transform: var(--mobile-rotate);
+  border-radius: 8px;
+  border: 2px solid;
+  border-color: var(--mobile-dark-blue);
+}
+
+.mobile5 {
+  position: absolute;
+  top: 25.2px;
+  left: 171px;
+  width: 2.88px;
+  height: 2.88px;
+  background: var(--mobile-dark-blue);
+  border-radius: 2px;
+}
+
+.mobile7 {
+  position: absolute;
+  height: 12.14px;
+  width: 12.14px;
+  left: 226px;
+  top: 143.5px;
+  border-radius: 10px;
+
+  background: var(--mobile-dark-blue);
+}
+
+.mobile1 {
+  position: absolute;
+  height: 2px;
+  width: 21px;
+  left: 148.5px;
+  top: 33.8px;
+  border-radius: 10px;
+  transform: var(--mobile-rotate);
+
+  background: var(--mobile-dark-blue);
+}
+
+.screen1 {
+  position: absolute;
+  height: 26.6px;
+  width: 1.5px;
+  left: 240px;
+  top: 95px;
+  border-radius: 2px;
+  background: var(--mobile-lines);
+  transform: var(--mobile-rotate);
+}
+
+.screen2 {
+  height: 39px;
+  width: 67px;
+  left: 152px;
+  top: 57px;
+  border-radius: 0px;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 2px;
+  border-color: var(--mobile-lines);
+  transform: var(--mobile-rotate);
+}
+
+.screen3 {
+  height: 32px;
+  width: 2px;
+  left: 180.35px;
+  top: 28px;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 2px;
+  border-color: var(--mobile-lines);
+  transform: rotate(58.5deg);
+}
+.screen4 {
+  height: 5.4px;
+  width: 0px;
+  left: 146px;
+  top: 68px;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 2px;
+  border-color: var(--mobile-lines);
+  transform: rotate(58.5deg);
+}
+.screen5 {
+  height: 5.4px;
+  width: 0px;
+  left: 144px;
+  top: 65px;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 2px;
+  border-color: var(--mobile-lines);
+  transform: rotate(58.5deg);
+}
+.screen6 {
+  height: 5.4px;
+  width: 0px;
+  left: 142px;
+  top: 62px;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 2px;
+  border-color: var(--mobile-lines);
+  transform: rotate(58.5deg);
+}
+
+.smoke1 {
+  position: absolute;
+
+  background: var(--mobile-dark-blue);
+  height: 1px;
+  width: 26.324085235595703px;
+  left: 159.580078125px;
+  top: 107.09538269042969px;
 }
