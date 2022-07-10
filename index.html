@@ -18,7 +18,7 @@
   <body>
     <form>
 
-      <div class="step step-1 ">
+      <div class="step step-1 active">
         <header class="header">
           <div class="icon">
             <img src="./img/icon/icon-logo.png" alt="icon" />
@@ -40,7 +40,7 @@
         </div>
       </div>
 
-      <div class="step step-2 ">
+      <div class="step step-2">
 
         <header class="header">
           <div class="icon">
@@ -105,6 +105,7 @@
              </div>
        </div>
 
+
         <div class="form-side">
           <div class="input-0">
             <input type="text" id="Name" placeholder="Name" onkeyup = "setInput(this.id ,this.value)" onload = "getInput(this.id)" />
@@ -158,7 +159,7 @@
 
       </div>
 
-      <div class="step step-3  ">
+      <div class="step step-3">
 
         <header class="header">
           <div class="icon">
@@ -221,6 +222,15 @@
             </ul>
           </div>
         </div>
+
+         <div class="popup-select" id="popup-select">
+          <div class="popup-header">
+              <div class="popup-title"><img src="./img/icon/error.svg"> Submit error</div>
+              <button type="button" class="close-button"><img src="./img/icon/Close-button.svg" alt=""></button>
+           </div>
+           <div class="popup-body"> Please select all selections
+             </div>
+       </div>
            
         <p class="radioh">
           Have you participated in the Redberry Championship?
@@ -248,7 +258,7 @@
 
       </div>
 
-      <div class="step step-4 active ">
+      <div class="step step-4">
         <header class="header">
           <div class="icon">
             <img src="./img/icon/icon-logo.png" alt="icon" />

@@ -12,6 +12,7 @@ let namePop = document.getElementById("popup-name");
 let emailPop = document.getElementById("popup-email");
 let pnumPop = document.getElementById("popup-pnum");
 let datePop = document.getElementById("popup-date");
+let selectPop = document.getElementById("popup-select");
 
 closePopUpButton.forEach((button) => {
   button.addEventListener("click", () => {
@@ -23,6 +24,7 @@ nextValid.forEach((button) => {
   button.addEventListener("click", () => {
     if (checkInputs()) {
       stageNum.classList.add("done");
+      closePopUp();
       changeStep("next");
     }
   });
@@ -96,4 +98,5 @@ function closePopUp() {
   emailPop.classList.remove("valid");
   pnumPop.classList.remove("valid");
   datePop.classList.remove("valid");
+  selectPop.classList.remove("valid");
 }

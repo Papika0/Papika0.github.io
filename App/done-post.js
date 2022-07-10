@@ -27,9 +27,10 @@ async function fetchPost() {
       body: JSON.stringify(requestoptions),
     }
   );
-  console.log(response.status);
-  if ((response.status = 201)) {
+  if (response.status == 201) {
     sessionStorage.clear();
     changeStep("next");
+  } else {
+    document.getElementById("popup-select").classList.add("valid");
   }
 }

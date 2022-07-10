@@ -299,7 +299,8 @@
 .popup-name,
 .popup-email,
 .popup-pnum,
-.popup-date {
+.popup-date,
+.popup-select {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -319,7 +320,8 @@
 .popup-name.valid,
 .popup-email.valid,
 .popup-pnum.valid,
-.popup-date.valid {
+.popup-date.valid,
+.popup-select.valid {
   visibility: visible;
 }
 .popup-header {
