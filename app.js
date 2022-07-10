@@ -1,9 +1,7 @@
-const steps = Array.from(document.querySelectorAll("form .step"));
-const nextBtn = document.querySelectorAll("form .GetS-Button");
-const form = document.querySelector("form");
-const prevBtn = document.querySelectorAll("form .back-btn");
 const stageNum = document.getElementById("stagenum-1");
 const closePopUpButton = document.querySelectorAll("form .close-button");
+const form1 = document.querySelector("form");
+const nextValid = document.querySelectorAll("form .next-button-valid");
 
 let fName = document.getElementById("Name");
 let email = document.getElementById("Email");
@@ -15,7 +13,24 @@ let emailPop = document.getElementById("popup-email");
 let pnumPop = document.getElementById("popup-pnum");
 let datePop = document.getElementById("popup-date");
 
-form.addEventListener("submit", (e) => {
+closePopUpButton.forEach((button) => {
+  button.addEventListener("click", () => {
+    closePopUp();
+  });
+});
+
+// nextValid.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     console.log(button);
+//     checkInputs();
+//     if (checkInputs()) {
+//       stageNum.classList.add("done");
+//       changeStep("next");
+//     }
+//   });
+// });
+
+form1.addEventListener("submit", (e) => {
   e.preventDefault();
   if (checkInputs()) {
     stageNum.classList.add("done");
@@ -74,6 +89,7 @@ function checkInputs() {
       check++;
     }
     if (check == 4) {
+      datePop.classList.remove("valid");
       return true;
     } else {
       console.log("need to be Validated");
@@ -91,33 +107,9 @@ function setSuccessFor(input) {
   formControl.className = "input-0 success";
 }
 
-closePopUpButton.forEach((button) => {
-  button.addEventListener("click", () => {
-    changeStep("close");
-  });
-});
-
-nextBtn.forEach((button) => {
-  button.addEventListener("click", () => {
-    changeStep("next");
-  });
-});
-
-prevBtn.forEach((button) => {
-  button.addEventListener("click", () => {
-    changeStep("prev");
-  });
-});
-
-function changeStep(btn) {
-  let index = 0;
-  const active = document.querySelector(".active");
-  index = steps.indexOf(active);
-  steps[index].classList.remove("active");
-  if (btn === "next") {
-    index++;
-  } else if (btn === "prev") {
-    index--;
-  }
-  steps[index].classList.add("active");
+function closePopUp() {
+  namePop.classList.remove("valid");
+  emailPop.classList.remove("valid");
+  pnumPop.classList.remove("valid");
+  datePop.classList.remove("valid");
 }

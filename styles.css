@@ -304,7 +304,8 @@ button.GetS-Button:hover {
   color: #212529;
 }
 
-.next-btn {
+.next-btn,
+.next-btn-valid {
   padding: 13px 24px;
 
   position: absolute;
@@ -317,7 +318,8 @@ button.GetS-Button:hover {
   border-radius: 8px;
 }
 
-.next-btn p {
+.next-btn p,
+.next-btn-valid p {
   width: 44px;
 
   font-family: "Open Sans";
@@ -326,11 +328,13 @@ button.GetS-Button:hover {
   color: #ffffff;
 }
 
-.next-btn:hover {
+.next-btn:hover,
+.next-btn-valid:hover {
   outline: 4px solid #c2a5f9cc;
 }
 
-.next-btn img {
+.next-btn img,
+.next-btn-valid img {
   position: absolute;
   height: 24px;
   width: 24px;
@@ -574,8 +578,8 @@ button.GetS-Button:hover {
   background: #f7f7f9;
 }
 
-#selectText1,
-#selectText {
+#experience_level,
+#character_name {
   height: 30px;
 
   font-family: "Open Sans";
@@ -967,14 +971,4 @@ button.GetS-Button:hover {
   border-radius: 2px;
   border-color: var(--mobile-lines);
   transform: rotate(58.5deg);
-}
-
-.smoke1 {
-  position: absolute;
-
-  background: var(--mobile-dark-blue);
-  height: 1px;
-  width: 26.324085235595703px;
-  left: 159.580078125px;
-  top: 107.09538269042969px;
 }

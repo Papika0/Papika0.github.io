@@ -1,14 +1,15 @@
-const api_url = "https://chess-tournament-api.devtest.ge/api/grandmasters";
-
-async function getGrandmasters(n) {
-  const response = await fetch(api_url);
+async function getGrandmasters() {
+  const response = await fetch(
+    "https://chess-tournament-api.devtest.ge/api/grandmasters"
+  );
   const data = await response.json();
-  const { id, name, image } = data[n];
-
-  document.getElementById("id").textContent = id;
-  document.getElementById("name").textContent = name;
-  document.getElementById("image").src =
-    "https://chess-tournament-api.devtest.ge" + image;
+  document.getElementById("list").innerHTML = `<li class="count">
+                <p>(Total ${data.length})</p>
+                </li>`;
+  data.map((char) => {
+    var optionCreation = document.createElement("li");
+    optionCreation.id = char.id;
+    optionCreation.innerHTML = `<p>${char.name}</p>
+                <img src="https://chess-tournament-api.devtest.ge/${char.image}" />`;
+  });
 }
-
-getGrandmasters(0);
