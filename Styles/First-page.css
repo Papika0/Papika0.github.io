@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 923px;
+  height: 84px;
+  background: #7025fb;
+}
+
+.icon {
+  position: absolute;
+  left: 60px;
+  top: 30.41px;
+}
+
+.logo {
+  position: absolute;
+  top: 30.3px;
+  left: 82.93px;
+  width: 254.82px;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+/* Landing page */
+.step-1-scrlphoto {
+  width: 923px;
+  height: 1196px;
+  left: 0px;
+  top: 84px;
+  background-image: url(../img/background/landingpage.png);
+}
+
+.step-1-fixed-side {
+  position: fixed;
+  width: 997px;
+  height: 1280px;
+  left: 923px;
+  top: 0px;
+  background: #fd5334;
+}
+
+#p1-1 {
+  position: absolute;
+  left: 85px;
+  bottom: 906px;
+  text-transform: uppercase;
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 80px;
+  color: white;
+}
+
+#p2-1 {
+  position: absolute;
+  left: 85px;
+  bottom: 781px;
+  text-transform: uppercase;
+  font-family: "Nunito";
+  font-weight: 900;
+  font-size: 80px;
+  color: white;
+}
+
+#pSmall-1 {
+  position: absolute;
+  left: 607px;
+  top: 306px;
+  font-family: "Nunito";
+  font-size: 20px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button.GetS-Button {
+  position: absolute;
+  width: 191px;
+  height: 53px;
+  left: 85px;
+  top: 601px;
+  background: #212529;
+  border-radius: 8px;
+  animation-timing-function: ease-in;
+  animation-duration: 1ms;
+}
+
+button.GetS-Button:hover {
+  outline: 4px solid #c2a5f9cc;
+}
+
+.GetS-Button p {
+  font-family: "Open Sans";
+  font-size: 20px;
+
+  position: absolute;
+  bottom: 12px;
+  left: 24px;
+
+  color: #ffffff;
+}
+
+.GetS-Button img {
+  position: absolute;
+  left: 143px;
+  top: 10.6px;
+}
