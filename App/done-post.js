@@ -5,8 +5,6 @@ form1.addEventListener("submit", (e) => {
 
 var valueD = "true";
 
-console.log(sessionStorage.getItem("experience_level"));
-
 async function fetchPost() {
   var requestoptions = {
     name: sessionStorage.getItem("Name"),
@@ -23,11 +21,15 @@ async function fetchPost() {
     "https://chess-tournament-api.devtest.ge/api/register",
     {
       method: "POST",
-      body: requestoptions,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(requestoptions),
     }
   );
-  console.log(JSON.stringify(requestoptions));
-  if (response.status == 201) {
-    sessionStorage.clear;
+  console.log(response.status);
+  if ((response.status = 201)) {
+    sessionStorage.clear();
+    changeStep("next");
   }
 }
