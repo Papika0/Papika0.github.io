@@ -108,13 +108,13 @@
 
         <div class="form-side">
           <div class="input-0">
-            <input type="text" id="Name" placeholder="Name" onkeyup = "setInput(this.id ,this.value)" onload = "getInput(this.id)" />
+            <input type="text" id="Name" placeholder="Name *" onkeyup = "setInput(this.id ,this.value)" onload = "getInput(this.id)" />
             <i class="check-valid"
               ><img src="./img/icon/check-circle-fill.svg" alt=""
             /></i>
           </div>
           <div class="input-0">
-            <input type="Email" id="Email" placeholder="Email" onkeyup = "setInput(this.id ,this.value)" onload = "getInput(this.id)" />
+            <input type="Email" id="Email" placeholder="Email *" onkeyup = "setInput(this.id ,this.value)" onload = "getInput(this.id)" />
             <i class="check-valid"
               ><img src="./img/icon/check-circle-fill.svg" alt=""
             /></i>
@@ -122,7 +122,7 @@
           <div class="input-0">
             <input
               type="text"
-              placeholder="Phone number"
+              placeholder="Phone number *"
               id="Pnumber"
               onkeypress="return /[0-9]/i.test(event.key)"
               onkeyup = "setInput(this.id ,this.value)"
@@ -136,7 +136,7 @@
             <input
               type="text"
               id="Date"
-              placeholder="Date"
+              placeholder="Date *"
               onclick="(this.type='date')"
               onblur="(this.type='text')"
               onchange="setInput(this.id ,this.value)"
