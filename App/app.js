@@ -1,7 +1,7 @@
 const stageNum = document.getElementById("stagenum-1");
 const closePopUpButton = document.querySelectorAll("form .close-button");
 const form1 = document.querySelector("form");
-const nextValid = document.querySelectorAll("form .next-button-valid");
+const nextValid = document.querySelectorAll("form .next-btn-valid");
 
 let fName = document.getElementById("Name");
 let email = document.getElementById("Email");
@@ -19,23 +19,13 @@ closePopUpButton.forEach((button) => {
   });
 });
 
-// nextValid.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     console.log(button);
-//     checkInputs();
-//     if (checkInputs()) {
-//       stageNum.classList.add("done");
-//       changeStep("next");
-//     }
-//   });
-// });
-
-form1.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (checkInputs()) {
-    stageNum.classList.add("done");
-    changeStep("next");
-  }
+nextValid.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (checkInputs()) {
+      stageNum.classList.add("done");
+      changeStep("next");
+    }
+  });
 });
 
 function checkInputs() {
@@ -48,8 +38,7 @@ function checkInputs() {
   let check = 0;
 
   if (fNameValue.length < 2) {
-    console.log("Wrong name");
-    setErrorFor(fName, "Name cannot be blank");
+    setErrorFor(fName);
     namePop.classList.add("valid");
   } else {
     check++;
@@ -63,8 +52,7 @@ function checkInputs() {
     } else {
       namePop.classList.remove("valid");
       emailPop.classList.add("valid");
-      setErrorFor(email, "Not a valid email");
-      console.log("wrong email");
+      setErrorFor(email);
     }
   }
   if (check == 2) {
@@ -74,16 +62,14 @@ function checkInputs() {
     } else {
       emailPop.classList.remove("valid");
       pnumPop.classList.add("valid");
-      setErrorFor(pnum, "pnum cannot be blank");
-      console.log("wrong  phone");
+      setErrorFor(pnum);
     }
   }
   if (check == 3) {
     if (!dateValue) {
       pnumPop.classList.remove("valid");
       datePop.classList.add("valid");
-      setErrorFor(date, "Date can't be blank");
-      console.log("wrong date");
+      setErrorFor(date);
     } else {
       setSuccessFor(date);
       check++;
@@ -91,8 +77,6 @@ function checkInputs() {
     if (check == 4) {
       datePop.classList.remove("valid");
       return true;
-    } else {
-      console.log("need to be Validated");
     }
   }
 }

@@ -1,17 +1,18 @@
 function radioOnClick(value) {
-  sessionStorage.setItem("already_participated", value);
-  console.log(sessionStorage.getItem("already_participated"));
+  if (value === true) {
+    sessionStorage.setItem("already_participated", true);
+  } else {
+    sessionStorage.setItem("already_participated", false);
+  }
 }
 
 function radioCheck() {
-  if (sessionStorage.getItem("already_participated") == "true") {
+  if (sessionStorage.getItem("already_participated") == true) {
     document.getElementById("Yes").checked = true;
     document.getElementById("No").checked = false;
-    console.log("yes");
   } else {
     document.getElementById("Yes").checked = false;
     document.getElementById("No").checked = true;
-    console.log("no");
   }
 }
 
@@ -19,6 +20,7 @@ function optionOnClick(name) {
   document.getElementById("character_name").innerHTML = name;
   document.getElementById("list").classList.toggle("hide");
   document.getElementById("selector-arrow2").classList.toggle("rotate");
+  document.getElementById("selection-2").classList.toggle("shown");
 }
 
 async function getGrandmasters() {
@@ -58,6 +60,7 @@ function checkSessionSelect(id) {
     sessionStorage.getItem(id) != undefined ||
     sessionStorage.getItem(id) != null
   ) {
+    console.log(document.getElementById("experience_level").textContent);
     document.getElementById(id).innerHTML = sessionStorage.getItem(id);
   }
 }

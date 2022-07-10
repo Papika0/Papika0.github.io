@@ -114,6 +114,8 @@
   top: 491px;
 
   background: #ffffff;
+}
+.shown {
   z-index: 10;
 }
 

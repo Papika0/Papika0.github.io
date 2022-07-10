@@ -14,19 +14,20 @@ selectField1.onclick = function () {
   list1.classList.toggle("hide");
   arrowIcon1.classList.toggle("rotate");
 };
-
+console.log(selectText1.innerText);
 for (option of options1) {
   option.onclick = function () {
-    selectText1.innerHTML = this.textContent;
+    selectText1.innerHTML = this.textContent.trim();
     list1.classList.toggle("hide");
     arrowIcon1.classList.toggle("rotate");
-    sessionStorage.setItem("experience_level", this.textContent);
+    sessionStorage.setItem("experience_level", this.textContent.trim());
   };
 }
 
 selectField.onclick = function () {
   list.classList.toggle("hide");
   arrowIcon2.classList.toggle("rotate");
+  document.getElementById("selection-2").classList.toggle("shown");
 };
 
 window.onload = (event) => {};
