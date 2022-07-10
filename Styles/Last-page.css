@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   gap: 16px;
 
   position: absolute;
@@ -27,7 +28,9 @@
 .rocket {
   width: 402px;
   height: 200px;
-  --rocket-yellow: #ffbc0e;
+  background: url(../img/last-page/Succsess-rocket.svg) no-repeat center;
+
+  /* --rocket-yellow: #ffbc0e;
   --rocket-orange: #f56132;
   --mobile-blue: #68e1fd;
   --mobile-dark-blue: #093f68;
@@ -36,10 +39,10 @@
   --mobile-rotate: rotate(148.06deg);
   --mobile-top: 15px;
   --mobile-right: 162px;
-  --border-radius: 8px;
+  --border-radius: 8px; */
 }
 
-.mobile3 {
+/* .mobile3 {
   position: absolute;
   right: var(--mobile-right);
   top: var(--mobile-top);
@@ -177,3 +180,12 @@
   border-color: var(--mobile-lines);
   transform: rotate(58.5deg);
 }
+
+.cloud1 {
+  height: 14.373726844787598px;
+  width: 8.164443016052246px;
+  margin-left: 208.462890625px;
+
+  background: url(../img/last-page/right-bottom-cloud.svg) no-repeat;
+  color: var(--mobile-dark-blue);
+} */
